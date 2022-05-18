@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+use Database\Factories\{{ class }}Factory;
+
+class {{ class }} extends Model
+{
+    /**
+     * Get corresponding factory instance
+     *
+     * @returns {{ class }}Factory
+     */
+    public static function factory(): {{ class }}Factory
+    {
+        return {{ class }}Factory::new();
+    }
+}

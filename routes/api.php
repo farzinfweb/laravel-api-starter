@@ -6,5 +6,5 @@ use Illuminate\Routing\Router;
 /** @var $router Illuminate\Routing\Router */
 
 $router->middleware('auth:sanctum')->group(function (Router $router) {
-    // define your routes here
+    $router->get('users/self', [\App\Http\Controllers\UserController::class, 'self'])->name('users.self');
 });
